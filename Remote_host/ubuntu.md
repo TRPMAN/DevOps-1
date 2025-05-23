@@ -1,7 +1,7 @@
 ## For this remote_host
 allow ssh to login in ubuntu
-vim /etc/ssh/sshd_config
-PasswordAuthentication no -> PasswordAuthentication yes
-then ssh-keygen
-copy pub to target VM : ssh-copy-id (username@hostname)
-and you can login with : ssh -i .ssh/id_rsa
+- vim /etc/ssh/sshd_config
+  - PasswordAuthentication no -> PasswordAuthentication yes
+- ssh-keygen : genarate public and private key
+- ssh-copy-id (username@hostname) : copy pub to target VM 
+- ssh -i .ssh/id_rsa : login to target VM
