@@ -1,23 +1,23 @@
 ## VIM Editor
-- edit file               : vim
-- insert mode             : insert (button)
+- vim : edit file
+- insert (button) : insert mode
 # Command Mode
-- Go in to command mode   : ESC
-- go top                  : gg
-- go end                  : G
-- undo                    : u
-- undo Entire Line        : U
-- Redo Changes            : Ctrl + R
-- copy line               : yy, (n)yy
-- Paste line              : p
-- delete line             : dd, (n)dd
-- search word             : /
+- ESC : Go in to command mode
+- gg : go top
+- G : go end
+- u : undo
+- U : undo Entire Line
+- Ctrl + R : Redo Changes
+- yy, (n)yy : copy line
+- p : Paste line
+- dd, (n)dd : delete line
+- / : search word
 # Extend Mode
-- Go in to Extend Mode    : ESC
-- save                    : :w
-- quit                    : :q
-- force                   : :wq!
-- set line num            : :se nu
-- remove line num         : :se nonu
-- replace                 : :%s/(word replaced)/(replace word)
-  - --> All word            : /g(in the end)
+- ESC : Go in to Extend Mode
+- :w : save
+- :q : quit
+- :wq! : force
+- :se nu : set line num
+- :se nonu : remove line num
+- :%s/(word replaced)/(replace word) : replace
+  - --> /g(in the end) : All word

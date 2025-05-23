@@ -1,20 +1,20 @@
 ## Base Command
-- What user you are         : whoami
-- Current Direc             : pwd
-- See in current Direc      : ls
-  - -->More Info               : -l 
-  - -->TimeStamp               : -t 
-  - -->Reverse                 : -r 
-  - -->Permission              : -d
-- Read a file               : cat
-- Switch to root user       : sudo -i
-- Change Direc              : cd
-- Loggout                   : exit
-- make direc                : mkdir
-- create empty file         : touch 
-  - -->range file              : touch text{1..10}.txt
-- copy to                   : cp, cp /*, cp -r
-- move to, rename file      : mv, mv /*, mv -r
-- remove                    : rm, rm -r
-- Redhat install            : yum install, dnf install, -y
-- Debian                    : apt install
+- whoami : What user you are
+- pwd : Current Direc
+- ls : See in current Direc
+  - --> -l : More Info
+  - --> -t : TimeStamp
+  - --> -r : Reverse
+  - --> -d : Permission
+- cat : Read a file
+- sudo -i : Switch to root user
+- cd : Change Direc
+- exit : Loggout
+- mkdir : make direc
+- touch : create empty file
+  - --> touch text{1..10}.txt : range file
+- cp, cp /*, cp -r : copy to
+- mv, mv /*, mv -r : move to, rename file
+- rm, rm -r : remove
+- yum install, dnf install, -y : Redhat install
+- apt install : Debian

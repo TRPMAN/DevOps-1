@@ -1,11 +1,11 @@
 ## Important Directory
-- Home Direc              : /root, /home/username
-- User Exe                : /bin, /usr/bin, /usr/local/bin
-- Sys Exe                 : /sbin, /usr/bin, /usr/local/sbin
-- Other Mountpoints       : /media/mnt
-- Config                  : /etc
-- Temporary               : /tmp
-- Kernal&Bootloader       : /boot
-- Server Data             : /boot
-- Sys Info                : /proc, /sys
-- Shared Lib              : /lib, /usr/lib, /usr/local/lib
+- /root, /home/username : Home Direc
+- /bin, /usr/bin, /usr/local/bin : User Exe
+- /sbin, /usr/bin, /usr/local/sbin : Sys Exe
+- /media/mnt : Other Mountpoints
+- /etc : Config
+- /tmp : Temporary
+- /boot : Kernal&Bootloader
+- /boot : Server Data
+- /proc, /sys : Sys Info
+- /lib, /usr/lib, /usr/local/lib : Shared Lib
