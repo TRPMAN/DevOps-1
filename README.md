@@ -2,32 +2,33 @@
 
 Welcome to my DevOps learning repository! 🚀
 
-This repository is a personal project where I document and organize my progress as I learn various DevOps tools, practices, and workflows. Each branch in this repository represents a different topic, concept, or tool I’m currently exploring or have completed studying.
+This is where I document my hands-on learning, practical exercises, and real-world simulations as I build up my DevOps skill set.
 
 ## 🔍 How to Use
 
 - Browse the available branches to explore different topics.
-- Each branch contains relevant notes, code examples, and practice configurations related to a specific DevOps area (e.g., Git, CI/CD, Docker, Kubernetes, Terraform, etc.).
+- Each branch contains relevant notes, code examples, and practice configurations related to a specific DevOps area.
 
 ## 📚 Topics Covered
 
-Some of the topics I plan to (or already have) explored include:
+Some of the topics I plan to explored include:
 
-- Version Control with Git
-- Continuous Integration / Continuous Deployment (CI/CD)
-- Docker & Containerization
-- Kubernetes & Orchestration
-- Infrastructure as Code (IaC) with Terraform
-- Monitoring & Logging
-- Cloud Providers (AWS, Azure, GCP)
+- Linux
+- Vagrant&Linux Server
+- Network
+- Containers
+- Bash Scripting
+- AWS
+- Jenkins
+- Terraform
+- Ansible
+- Docker
+- Kubernetes
+- Some of Hands-on Project
 
 ## 📌 Purpose
 
 This project is intended for personal learning and growth. If you find anything useful, feel free to explore, use, or contribute!
-
-## 📬 Feedback
-
-Feel free to open an issue or contact me if you have suggestions or advice!
 
 ---
 Happy learning! 💡
