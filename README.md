@@ -13,17 +13,17 @@ This is where I document my learning, hands-on exercises, and some projects as I
 
 Some of the topics I plan to explored include:
 
-✅ Linux
-✅ Vagrant&Linux Server
-✅ Network
-✅ Containers
-✅ Bash Scripting
-⏳ AWS
-⏳ Jenkins
-✅ Terraform
-⏳ Ansible
-⏳ Docker
-⏳ Kubernetes
+- ✅ Linux
+- ✅ Vagrant&Linux Server
+- ✅ Network
+- ✅ Containers
+- ✅ Bash Scripting
+- ⏳ AWS
+- ⏳ Jenkins
+- ✅ Terraform
+- ⏳ Ansible
+- ⏳ Docker
+- ⏳ Kubernetes
 
 ---
 Thanks for visiting 💡
