@@ -4,7 +4,6 @@
 - log files of the sys    : /var/log
 - like shift+delete (for redirect output that we do not want) : /dev/null
 - Change Permission about sudo  : /etc/sudoers
--         
 
 ## Good to know Command
 - how long the system is up and running,How many user are logged in, Load Average : uptime
