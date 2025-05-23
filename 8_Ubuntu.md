@@ -10,5 +10,4 @@ Debian-based systems (like Ubuntu) are similar, but some commands may differ sli
   - --> remove              : -r 
 - auto manage package     : apt install
 - auto remove package     : apt remove
-- auto remove package     : apt purge
-- cleanly
+- auto remove package cleanly  : apt purge
