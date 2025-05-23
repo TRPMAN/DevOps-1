@@ -3,6 +3,8 @@
 Welcome to the First Project of my DevOps-1 learning journey! 🚀
 
 This branch is where I do some hands-on project after learning Linux and Vagrant part to host simple website
+
+## 🧱 Stack Used
 - Nginx : For web service
 - Tomcat : For Application server
 - RabbitMQ : Message Broker
@@ -18,7 +20,6 @@ This branch is where I do some hands-on project after learning Linux and Vagrant
 5. SSH in Tomcat and setup in VM
 6. Build Web in Tomcat VM and deploy on Tomcat
 7. SSH in Nginx and config to route to Tomcat
-8. Test by using Nginx's VM ip address
-
+8. Access the app via the Nginx VM's IP address to verify everything works
 ---
 Thanks for visiting! 💡
