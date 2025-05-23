@@ -1,29 +1,16 @@
-# DevOps Learning Progress
+# 📦 Vagrant Part
 
-Welcome to my DevOps learning repository! 🚀
+Welcome to the Vagrant part of my DevOps-1 learning journey! 🚀
 
-This is where I document my learning, hands-on exercises, and some projects as I build up my DevOps skill set.
+This branch is where I document what I’ve learned while using Vagrant.
 
-## 🔍 How to Use
+## 📚 Topics Covered
 
-- Browse the available branches to explore different topics.
-- Each branch contains relevant notes, code examples, and practice configurations related to a specific DevOps area.
-
-## 🎯 Topics Covered
-
-Some of the topics I plan to explored include:
-
-- ✅ Linux
-- ✅ Vagrant&Linux Server
-- ✅ Network
-- ✅ Containers
-- ✅ Bash Scripting
-- ⏳ AWS
-- ⏳ Jenkins
-- ✅ Terraform
-- ⏳ Ansible
-- ⏳ Docker
-- ⏳ Kubernetes
+1. [Centos](./1_centos) – Understand basic setup Centos
+2. [Ubuntu](./2_ubuntu) – Basic Ubuntu setup and key Vagrant elements
+3. [Finance](./3_finance) – Using VM to host webpage on local
+4. [FinanceIAC](./4_financeIAC) – Learning how to use provisioner in Vagrantfile
+5. [MultiVM](./5_multiVM) – Create Multiple VM and practice inter-VM communication
 
 ---
-Thanks for visiting 💡
+Thanks for visiting! 💡
