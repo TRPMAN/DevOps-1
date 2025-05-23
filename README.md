@@ -2,18 +2,19 @@
 
 Welcome to the Linux part of my DevOps learning journey! 🚀
 
-In this branch, I document what I’ve learned about working with Linux, focusing on essential command-line skills that are foundational for any DevOps engineer.
+This branch is where I document everything I’ve learned about working with Linux — focusing on essential command-line skills and system knowledge that are foundational for any DevOps engineer.
 
-## 📁 Topics
+## 📚 Topics Covered
 
-1. [Good to Know](./0_Good-to-Know.md) – Basic concepts and tips
-2. [Important Directories](./1_Important Directory.md) – Overview of Linux directory structure
-3. [Basic Commands](./2_Basic-Command.md) – Frequently used command-line tools
-4. [Vim Editor](./3_Vim-Editor.md) – Getting started with Vim
-5. [File System](./4_File-System.md) – Structure and file management
-6. [Filters](./5_Filter.md) – `grep`, `sort`, `uniq`, `cut`, etc.
-
-This is my hands-on space to explore and practice core Linux concepts that are essential in any DevOps environment.
+1. [Good to Know](./0_Good-to-Know.md) – Some of Good to Know Linux CLI
+2. [Important Directories](./1_Important%20Directory.md) – Key system directories
+3. [Basic Commands](./2_Basic-Command.md) – Basic Linux CLI commands
+4. [Vim Editor](./3_Vim-Editor.md) – Basics of editing with Vim
+5. [File System & Permissions](./4_File-System-Permission.md) – Linux file structure and permission
+6. [Filters](./5_Filter.md) – Filtering Command
+7. [Redirection](./6_Redirection.md) – Redirect Output Command 
+8. [Users & Groups](./7_Users-Groups.md) – Managing user accounts, groups, and permissions
+9. [Ubuntu Notes](./8_Ubuntu.md) – Differences in commands and tools between Red Hat and Debian-based systems
 
 ---
-Thanks for visiting! 💡  
+Thanks for visiting 💡
