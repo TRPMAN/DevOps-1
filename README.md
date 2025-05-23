@@ -9,11 +9,11 @@ This is where I document my hands-on learning, practical exercises, and real-wor
 - Browse the available branches to explore different topics.
 - Each branch contains relevant notes, code examples, and practice configurations related to a specific DevOps area.
 
-## 📚 Topics Covered
+## 🎯 Topics Covered
 
 Some of the topics I plan to explored include:
 
-- Linux
+- ✅ Linux
 - Vagrant&Linux Server
 - Network
 - Containers
@@ -24,11 +24,7 @@ Some of the topics I plan to explored include:
 - Ansible
 - Docker
 - Kubernetes
-- Some of Hands-on Project
-
-## 📌 Purpose
-
-This project is intended for personal learning and growth. If you find anything useful, feel free to explore, use, or contribute!
+- ⏳ Some of Hands-on Project
 
 ---
-Happy learning! 💡
+Thanks for visiting 💡
