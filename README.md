@@ -1,29 +1,24 @@
-# DevOps Learning Progress
+# 📁 Project Part 1
 
-Welcome to my DevOps learning repository! 🚀
+Welcome to the First Project of my DevOps-1 learning journey! 🚀
 
-This is where I document my learning, hands-on exercises, and some projects as I build up my DevOps skill set.
+This branch is where I do some hands-on project after learning Linux and Vagrant part to host simple website
+- Nginx : For web service
+- Tomcat : For Application server
+- RabbitMQ : Message Broker
+- Memcache : DB Caching
+- MySQL : SQL Database
 
-## 🔍 How to Use
+## 📚 Step
 
-- Browse the available branches to explore different topics.
-- Each branch contains relevant notes, code examples, and practice configurations related to a specific DevOps area.
-
-## 🎯 Topics Covered
-
-Some of the topics I plan to explored include:
-
-- ✅ Linux
-- ✅ Vagrant&Linux Server
-- ✅ Network
-- ✅ Containers
-- ✅ Bash Scripting
-- ⏳ AWS
-- ⏳ Jenkins
-- ✅ Terraform
-- ⏳ Ansible
-- ⏳ Docker
-- ⏳ Kubernetes
+1. Create Multiple VM using Vagrantfile
+2. SSH in MySQL and setup in VM
+3. SSH in Memcache and setup in VM
+4. SSH in RabbitMQ and setup in VM
+5. SSH in Tomcat and setup in VM
+6. Build Web in Tomcat VM and deploy on Tomcat
+7. SSH in Nginx and config to route to Tomcat
+8. Test by using Nginx's VM ip address
 
 ---
-Thanks for visiting 💡
+Thanks for visiting! 💡
