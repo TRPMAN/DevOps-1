@@ -12,7 +12,7 @@
 - r => read w => write x => execute
 - --- --- --- => filetype user group other
 - change permission       : chmod -(option) (username):(group) (path)
-- --> Recursive           : -R       
+  - --> Recursive           : -R       
 - change permission       : chmod -(option) ((U,G,O)(-,+)(r,w,x)) ( path)
 - change permission       : chmod -(option) 640 (path)
 - 4 => Read 2 => Write 1 => execute
