@@ -3,13 +3,10 @@
 - target        
 - input add data in       : (input) >> (target) 
 - target   
-- --> standard output     : 1>, 1>>, >, >>  
-- (default)
+- --> standard output(default)     : 1>, 1>>, >, >>  
 - --> standard error      : 2>, 2>>          
 - --> all 1&2             : &>, &>>          
-- send the 1st command’s  : |
-- output to the 2nd 
-- command        
+- send the 1st command’s output to the 2nd command : |       
 - --> Recursive           : -R 
 - --> Opposite search     : -v       
 - reader                  : less

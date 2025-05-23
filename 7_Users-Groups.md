@@ -13,9 +13,6 @@
 - delete user             : userdel
 - --> user home direc     : -r  
 - delete group            : groupdel
-- Edit Permission about   : visudo
-- sudo or NOPASSWD
-- --> Allow root to run   : (username) ALL=(ALL) NOPASSWD: ALL 
-- any commands anywhere           
-- --> Allow root to run   : %(groupname) ALL=(ALL) NOPASSWD: ALL 
-- any commands anywhere
+- Edit Permission about sudo or NOPASSWD   : visudo
+- --> Allow root to run any commands anywhere  : (username) ALL=(ALL) NOPASSWD: ALL       
+- --> Allow root to run any commands anywhere  : %(groupname) ALL=(ALL) NOPASSWD: ALL 
