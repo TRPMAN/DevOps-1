@@ -1,8 +1,8 @@
-# 🐧 Linux Learning
+# 🐧 Linux Part
 
-Welcome to the Linux part of my DevOps learning journey! 🚀
+Welcome to the Linux part of my Devops-1 learning journey! 🚀
 
-This branch is where I document everything I’ve learned about working with Linux — focusing on essential command-line skills and system knowledge that are foundational for any DevOps engineer.
+This branch is where I document some useful Linux commands that I’ve been learning.
 
 ## 📚 Topics Covered
 
