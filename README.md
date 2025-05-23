@@ -1,29 +1,19 @@
-# DevOps Learning Progress
+# 🐧 Linux Learning
 
-Welcome to my DevOps learning repository! 🚀
+Welcome to the Linux part of my DevOps learning journey! 🚀
 
-This is where I document my learning, hands-on exercises, and some projects as I build up my DevOps skill set.
+In this branch, I document what I’ve learned about working with Linux, focusing on essential command-line skills that are foundational for any DevOps engineer.
 
-## 🔍 How to Use
+## 📁 Topics
 
-- Browse the available branches to explore different topics.
-- Each branch contains relevant notes, code examples, and practice configurations related to a specific DevOps area.
+1. [Good to Know](./0_Good-to-Know.md) – Basic concepts and tips
+2. [Important Directories](./1_Important Directory.md) – Overview of Linux directory structure
+3. [Basic Commands](./2_Basic-Command.md) – Frequently used command-line tools
+4. [Vim Editor](./3_Vim-Editor.md) – Getting started with Vim
+5. [File System](./4_File-System.md) – Structure and file management
+6. [Filters](./5_Filter.md) – `grep`, `sort`, `uniq`, `cut`, etc.
 
-## 🎯 Topics Covered
-
-Some of the topics I plan to explored include:
-
-✅ Linux
-✅ Vagrant&Linux Server
-✅ Network
-✅ Containers
-✅ Bash Scripting
-⏳ AWS
-⏳ Jenkins
-✅ Terraform
-⏳ Ansible
-⏳ Docker
-⏳ Kubernetes
+This is my hands-on space to explore and practice core Linux concepts that are essential in any DevOps environment.
 
 ---
-Thanks for visiting 💡
+Thanks for visiting! 💡  

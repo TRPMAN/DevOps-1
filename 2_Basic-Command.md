@@ -1,0 +1,20 @@
+## Base Command
+What user you are       : whoami
+Current Direc           : pwd
+See in current Direc    : ls
+  --> More Info         : -l 
+  --> TimeStamp         : -t 
+  --> Reverse           : -r 
+  --> Permission        : -d
+Read a file             : cat
+Switch to root user     : sudo -i
+Change Direc            : cd
+Loggout                 : exit
+make direc              : mkdir
+create empty file       : touch 
+  --> range file        : touch text{1..10}.txt
+copy to                 : cp, cp /*, cp -r
+move to, rename  file   : mv, mv /*, mv -r
+remove                  : rm, rm -r
+Redhat install          : yum install, dnf install, -y
+Debian                  : apt install
