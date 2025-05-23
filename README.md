@@ -6,7 +6,7 @@ This branch is where I document what I’ve learned while using Vagrant.
 
 ## 📚 Topics Covered
 
-1. [Centos](./1_centos) – Understand basic setup Centos
+1. [Centos](./1_centos) – Basic Centos setup
 2. [Ubuntu](./2_ubuntu) – Basic Ubuntu setup and key Vagrant elements
 3. [Finance](./3_finance) – Using VM to host webpage on local
 4. [FinanceIAC](./4_financeIAC) – Learning how to use provisioner in Vagrantfile
