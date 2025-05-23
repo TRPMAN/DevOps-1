@@ -20,4 +20,4 @@
 - set line num            : :se nu
 - remove line num         : :se nonu
 - replace                 : :%s/(word replaced)/(replace word)
-- --> All word            : /g(in the end)
+  - --> All word            : /g(in the end)
