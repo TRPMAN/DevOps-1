@@ -1,30 +1,30 @@
 ## Redirection
-input create/overwrite  : (input) > (target) 
-target        
-input add data in       : (input) >> (target) 
-target   
-  --> standard output   : 1>, 1>>, >, >>  
-      (default)
-  --> standard error    : 2>, 2>>          
-  --> all 1&2           : &>, &>>          
-send the 1st command’s  : |
-output to the 2nd 
-command        
-  --> Recursive         : -R 
-  --> Opposite search   : -v       
-reader                  : less
-reader with percent     : more
-cat first 10 line       : head 
-  --> first n line      : -n
-cat last 10 line        : tail 
-  --> first n line      : -n
-  --> for live change   : -f
-looking specific col    : cut
-  --> delimiter         : -d(delimiter)
-  --> for colume n      : -f(number)
-better than cut         : awk
-  --> delimiter         : -f'delimiter'
-  --> for colume n      : 'print $n'
-receive data from awk   : xargs
-replace word            : sed 's/(word replaced)/(replace text)/g(all word)' (target)
-  --> confirm change    : -i
+- input create/overwrite  : (input) > (target) 
+- target        
+- input add data in       : (input) >> (target) 
+- target   
+- --> standard output     : 1>, 1>>, >, >>  
+- (default)
+- --> standard error      : 2>, 2>>          
+- --> all 1&2             : &>, &>>          
+- send the 1st command’s  : |
+- output to the 2nd 
+- command        
+- --> Recursive           : -R 
+- --> Opposite search     : -v       
+- reader                  : less
+- reader with percent     : more
+- cat first 10 line       : head 
+- --> first n line        : -n
+- cat last 10 line        : tail 
+- --> first n line        : -n
+- --> for live change     : -f
+- looking specific col    : cut
+- --> delimiter           : -d(delimiter)
+- --> for colume n        : -f(number)
+- better than cut         : awk
+- --> delimiter           : -f'delimiter'
+- --> for colume n        : 'print $n'
+- receive data from awk   : xargs
+- replace word            : sed 's/(word replaced)/(replace text)/g(all word)' (target)
+- --> confirm change      : -i

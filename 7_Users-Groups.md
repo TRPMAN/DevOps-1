@@ -1,21 +1,21 @@
 ## Users & Groups
-user info in sys        : /etc/passwd
-group info in sys       : /etc/group
-id info                 : id
-add user                : useradd
-add group               : groupadd
-add group to user       : usermod 
-  --> 1st group         : -ag  
-  --> 2nd group         : -aG 
-add group to user       : vim /etc/group
-add user password       : passwd
-login into that user    : su - (username)
-delete user             : userdel
-  --> user home direc   : -r  
-delete group            : groupdel
-Edit Permission about   : visudo
-sudo or NOPASSWD
-  --> Allow root to run : (username) ALL=(ALL) NOPASSWD: ALL 
-  any commands anywhere           
-  --> Allow root to run : %(groupname) ALL=(ALL) NOPASSWD: ALL 
-  any commands anywhere 
+- user info in sys        : /etc/passwd
+- group info in sys       : /etc/group
+- id info                 : id
+- add user                : useradd
+- add group               : groupadd
+- add group to user       : usermod 
+- --> 1st group           : -ag  
+- --> 2nd group           : -aG 
+- add group to user       : vim /etc/group
+- add user password       : passwd
+- login into that user    : su - (username)
+- delete user             : userdel
+- --> user home direc     : -r  
+- delete group            : groupdel
+- Edit Permission about   : visudo
+- sudo or NOPASSWD
+- --> Allow root to run   : (username) ALL=(ALL) NOPASSWD: ALL 
+- any commands anywhere           
+- --> Allow root to run   : %(groupname) ALL=(ALL) NOPASSWD: ALL 
+- any commands anywhere
