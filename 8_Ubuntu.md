@@ -1,6 +1,6 @@
 ## Ubuntu
-# Most of the commands above are written for Red Hat-based systems. 
-# Debian-based systems (like Ubuntu) are similar, but some commands may differ slightly.
+Most of the commands above are written for Red Hat-based systems. 
+Debian-based systems (like Ubuntu) are similar, but some commands may differ slightly.
 - add user                : adduser
 - default editor is nano  : export EDITOR=vim
 - if you want to change
