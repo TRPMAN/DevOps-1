@@ -6,8 +6,8 @@
 - if you want to change
 - editor
 - manual manage package   : dpkg
-- --> install             : -i
-- --> remove              : -r 
+  - --> install             : -i
+  - --> remove              : -r 
 - auto manage package     : apt install
 - auto remove package     : apt remove
 - auto remove package     : apt purge
