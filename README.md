@@ -1,29 +1,17 @@
-# DevOps Learning Progress
+# 💠 Terraform Part
 
-Welcome to my DevOps learning repository! 🚀
+Welcome to the Terraform part of my Devops-1 learning journey! 🚀
 
-This is where I document my learning, hands-on exercises, and some projects as I build up my DevOps skill set.
+This branch is where I document my Terraform practice that I’ve been learning.
 
-## 🔍 How to Use
+### 🔧 Terraform Practice
 
-- Browse the available branches to explore different topics.
-- Each branch contains relevant notes, code examples, and practice configurations related to a specific DevOps area.
-
-## 🎯 Topics Covered
-
-Some of the topics I plan to explored include:
-
-- ✅ Linux
-- ✅ Vagrant&Linux Server
-- ✅ Network
-- ✅ Containers
-- ✅ Bash Scripting
-- ⏳ AWS
-- ⏳ Jenkins
-- ✅ Terraform
-- ⏳ Ansible
-- ⏳ Docker
-- ⏳ Kubernetes
+- [Exercise 1](./Exercise 1) – Searching for AMI ID
+- [Exercise 2](./Exercise 2) – Launch an EC2 instance with Terraform
+- [Exercise 3](./Exercise 3) – Work with variables
+- [Exercise 4](./Exercise 4) – Provision a webpage using Terraform 
+- [Exercise 5](./Exercise 5) – Output 
+- [Exercise 6](./Exercise 6) – Connect to an S3 bucket
 
 ---
 Thanks for visiting 💡
