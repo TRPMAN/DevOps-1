@@ -1,5 +1,4 @@
 *.tfstate
 *.tfstate.backup
 *.csv
-*.lock.hcl
 .terraform/
