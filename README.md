@@ -1,8 +1,8 @@
-# 📁 Project Part 2
+# 📁 Project Part 3
 
-Welcome to the Second Project of my DevOps-1 learning journey! 🚀
+Welcome to the Third Project of my DevOps-1 learning journey! 🚀
 
-This branch is where I work on a hands-on project to Lift & Shift Project 1 to AWS after learning core AWS services
+This branch is where I work on a hands-on project to Rearchitecture Project 2
 
 ## 🧱 Stack Used
 - Tomcat : Application server
@@ -10,7 +10,7 @@ This branch is where I work on a hands-on project to Lift & Shift Project 1 to A
 - Memcached : DB Caching
 - MySQL : SQL Database
 
-## AWS Service
+## AWS Service Rearch
 - EC2 : Host 4 Instance (Tomcat, RabbitMQ, Memcached and Mysql)
 - ASG : Auto Scaling Group for the Tomcat Instance
 - ELB : Used as a load balancer
