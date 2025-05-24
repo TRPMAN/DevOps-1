@@ -10,7 +10,7 @@ This branch is where I work on a hands-on project to Lift & Shift Project 1 to A
 - Memcached : DB Caching
 - MySQL : SQL Database
 
-## AWS Service
+## 🛠️ AWS Service
 - EC2 : Host 4 Instance (Tomcat, RabbitMQ, Memcached and Mysql)
 - ASG : Auto Scaling Group for the Tomcat Instance
 - ELB : Used as a load balancer
