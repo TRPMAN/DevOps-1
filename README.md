@@ -1,8 +1,8 @@
-# 🐧 Linux Part
+# ☁️ AWS Part
 
-Welcome to the Linux part of my Devops-1 learning journey! 🚀
+Welcome to the AWS part of my Devops-1 learning journey! 🚀
 
-This branch is where I document some useful Linux commands that I’ve been learning.
+In this branch, I document what I’ve learned while working with AWS — focusing on useful commands, configurations, and setup steps for common services.
 
 ## 📚 Topics Covered
 
