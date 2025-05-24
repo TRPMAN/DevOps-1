@@ -5,8 +5,8 @@ Welcome to the First Project of my DevOps-1 learning journey! 🚀
 This branch is where I do some hands-on project after learning Linux and Vagrant part to host simple website
 
 ## 🧱 Stack Used
-- Nginx : For Web Service
-- Tomcat : For Application Server
+- Nginx : Web Service
+- Tomcat : Application Server
 - RabbitMQ : Message Broker
 - Memcache : DB Caching
 - MySQL : SQL Database
