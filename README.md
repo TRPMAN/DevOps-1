@@ -2,20 +2,16 @@
 
 Welcome to the AWS part of my Devops-1 learning journey! 🚀
 
-In this branch, I document what I’ve learned while working with AWS — focusing on useful commands, configurations, and setup steps for common services.
+In this branch, I document what I’ve learned while working with AWS.
 
 ## 📚 Topics Covered
 
-1. [Good to Know](./0_Good-to-Know.md) – Some of Good to Know Linux CLI
-2. [Important Directories](./1_Important%20Directory.md) – Key system directories
-3. [Basic Commands](./2_Basic-Command.md) – Basic Linux CLI commands
-4. [Vim Editor](./3_Vim-Editor.md) – Basics of editing with Vim
-5. [File System & Permissions](./4_File-System-Permission.md) – Linux file structure and permission
-6. [Filters](./5_Filter.md) – Filtering Command
-7. [Redirection](./6_Redirection.md) – Redirect Output Command 
-8. [Users & Groups](./7_Users-Groups.md) – Managing user accounts, groups, and permissions
-9. [Ubuntu](./8_Ubuntu.md) – Differences in commands and tools between Red Hat and Debian-based systems
-10. [Network](./9_Network-Command.md) – Network Good to Know Command
+1. [AWS-CLI](./0_AWS-CLI.md) – Some of Good to Know AWS CLI and where to find a document
+2. [EC2](./1_EC2.md) – Some service in EC2
+3. [CloudWatch](./2_CloudWatch.md) – Monitoring and alarm using CloudWatch
+4. [ElasticFIleSystem](./3_ElasticFIleSystem.md) – Amazon EFS and basic usage
+5. [S3](./4_S3.md) –  S3 buckets, storage classes, and rules
+6. [RDS](./5_RDS.md) – Good to Know in Amazon RDS
 
 ---
 Thanks for visiting 💡
