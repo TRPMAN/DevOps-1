@@ -5,7 +5,7 @@ Welcome to the Second Project of my DevOps-1 learning journey! 🚀
 This branch is where I work on a hands-on project to Lift & Shift Project 1 to AWS after learning core AWS services
 
 ## 🧱 Stack Used
-- Tomcat : Application server
+- Tomcat : Application Server
 - RabbitMQ : Message Broker
 - Memcached : DB Caching
 - MySQL : SQL Database
