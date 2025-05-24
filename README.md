@@ -10,7 +10,7 @@ This branch is where I work on a hands-on project to re-architect Project 2 usin
 - Memcached : DB Caching
 - MySQL : SQL Database
 
-## AWS Service Rearch
+## 🛠️ AWS Service
 - Elastic Beanstalk : Replaces EC2, ASG, and ELB for Tomcat
 - Amazon MQ : Replaces RabbitMQ
 - ElastiCache : Replaces Memcached
