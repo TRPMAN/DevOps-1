@@ -18,3 +18,4 @@
 - ps -ef : All Process with Pid & PPID
 - kill -9 (PID) : force end Process
 - wget : download file
+- lsof (path) : Show processes using files in the specified directory
