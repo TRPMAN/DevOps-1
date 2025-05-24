@@ -6,7 +6,7 @@ This branch is where I document some useful Linux commands that I’ve been lear
 
 ## 📚 Topics Covered
 
-1. [Good to Know](./0_Good-to-Know.md) – Some of Good to Know Linux CLI
+1. [Good to Know](./0_Good-to-Know.md) – Some Good to Know Linux Command
 2. [Important Directories](./1_Important%20Directory.md) – Key system directories
 3. [Basic Commands](./2_Basic-Command.md) – Basic Linux CLI commands
 4. [Vim Editor](./3_Vim-Editor.md) – Basics of editing with Vim
