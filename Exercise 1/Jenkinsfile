@@ -1,3 +1,8 @@
+def COLOR_MAP = [
+  'SUCCESS': 'good',
+  'FAILURE': 'danger'
+]
+
 pipeline {
   agent any
   // This env come from -> Manage Jenkins -> Credentials
@@ -5,7 +10,7 @@ pipeline {
     REPO_URL = credentials('hkh-repo-url')
   }
   tools {
-    maven : "MAVEN3.9"
+    maven "MAVEN3.9"
     jdk "JDK17"
   }
 
@@ -14,13 +19,6 @@ pipeline {
       steps {
         // git option: ' ', option: ' ', .....
         git branch: 'atom', url: "${env.REPO_URL}"
-      }
-    }
-
-    stage('Unit Test') {
-      steps {
-        // sh for shell command sh '(command)'
-        sh 'mvn test'
       }
     }
 
@@ -36,6 +34,84 @@ pipeline {
           archiveArtifacts artifacts: '**/*.war'
         }
       }
+    }
+
+    stage('Unit Test') {
+      steps {
+        // sh for shell command sh '(command)'
+        sh 'mvn test'
+      }
+    }
+
+    stage ('Checkstyle Analysis'){
+      steps {
+          sh 'mvn checkstyle:checkstyle'
+      }
+    }
+
+    stage('SonarQube Analysis') {
+      // set environment variable for this stage only
+      // using tool in Manage Jenkins->Tools->Tools Name
+      environment {
+        scannerHome = tool 'SONAR6.2'
+      }
+      steps {
+        // uses the sonarqube server configured in Manage Jenkins -> System Configuration
+        // withSonarQubeEnv('(name from Jenkins->System->SonarQube servers->Name))')
+        withSonarQubeEnv('Sonar-server'){
+          // give multi line command and explain code
+          sh '''
+            ${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=vprofile \
+              -Dsonar.projectName=vprofile-repo \
+              -Dsonar.projectVersion=1.0 \
+              -Dsonar.sources=src/ \
+              -Dsonar.java.binaries=target/test-classes/com/visualpathit/account/controllerTest/ \
+              -Dsonar.junit.reportsPath=target/surefire-reports/ \
+              -Dsonar.jacoco.reportsPath=target/jacoco.exec \
+              -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml'''
+          // Going into Directory of tool in env -> Give a projectKry value
+          // Project name
+          // Project Version
+          // Source Code of our project
+          // Scan from source code and upload all the available result to the sonarserver
+        }
+      }
+    }
+
+    stage('Quality Gate') {
+      // use Quality Gate
+      steps {
+        timeout(time: 1, unit: 'HOURS') {
+          waitForQualityGate abortPipeline: true
+        }
+      }
+    }
+
+    stage('Nexus Artifact Upload') {
+      steps {
+        nexusArtifactUploader(
+          nexusVersion: 'nexus3',
+          protocol: 'http',
+          nexusUrl: '172.31.39.21:8081',
+          groupId: 'QA',
+          // Jenkins Var and Plugin(Build Timestamp) Var
+          version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
+          repository: 'vprofile-repo',
+          credentialsId: 'nexus-login',
+          artifacts: [
+            [artifactId: 'vproapp', classifier: '', file: 'target/vprofile-v2.war', type: 'war']
+          ]
+        )
+      }
+    }
+  }
+  // after all stage -> send noti
+  post {
+    always {
+      echo 'Slack Noti'
+      slackSend channel: "#all-devops-1",
+        color: COLOR_MAP[currentBuild.currentResult],
+        message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME}" 
     }
   }
 }
