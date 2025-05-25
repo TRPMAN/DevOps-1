@@ -8,6 +8,7 @@ Jenkins open on port 8080
 - /var/log : jenkins log
 - /usr/lib/jvm : java home path (for manual install some tool like JDK)
 
-## Job Configure
-Build Steps
-- redirect some file for example cat (some file) > info.txt info.txt will go in Workspaces
+## Other
+SonarQube is a code analysis dashboard
+
+SonarQube is running on port 9000, but it's behind Nginx, which proxies it to be accessible via port 80
