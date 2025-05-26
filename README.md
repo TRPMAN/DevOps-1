@@ -4,6 +4,8 @@ Welcome to the Linux section of my Devops-1 learning journey! 🚀
 
 This branch is where I document some useful Linux commands that I’ve been learning.
 
+---
+
 ## 📚 Topics Covered
 
 1. [Good to Know](./0_Good-to-Know.md) – Some Good to Know Linux Command
