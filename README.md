@@ -4,7 +4,7 @@ Welcome to the Bash Scripting section of my Devops-1 learning journey! 🚀
 
 This branch is where I document my Bash Script practice and a little project that I’ve been learning
 
-### 🔧 Bash Scripting Practice
+## 📚 Topics Covered
 
 1. [1_firstscript.sh](./01_firstscript.sh) – First Bash script  
 2. [2_websetup.sh](./02_websetup.sh) – Simple web environment setup  
