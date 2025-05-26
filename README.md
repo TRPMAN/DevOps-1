@@ -6,7 +6,7 @@ This branch is where I document my Python practicing that I've been learning
 
 ## 📚 Topics Covered
 
-1. [Good to Know](./Good_to_Know.md) - Some Good to know about Python
+1. [Good to Know](./Good_to_Know.md) - Good to know about Python
 
 ---
 Thanks for visiting 💡
