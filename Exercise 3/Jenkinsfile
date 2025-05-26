@@ -1,0 +1,57 @@
+def COLOR_MAP = [
+  'SUCCESS': 'good',
+  'FAILURE': 'danger'
+]
+
+pipeline {
+  // use new agent/node
+  agent {
+    label 'node1'
+  }
+  // This env come from -> Manage Jenkins -> Credentials
+  environment {
+    REPO_URL = credentials('hkh-repo-url')
+  }
+  tools {
+    maven "MAVEN3.9"
+    jdk "JDK17"
+  }
+
+  stages {
+    stage('Fetch code') {
+      steps {
+        // git option: ' ', option: ' ', .....
+        git branch: 'atom', url: "${env.REPO_URL}"
+      }
+    }
+
+    stage('Build') {
+      steps {
+        // skip the test from previos step
+        sh 'mvn install -DskipTests'
+      }
+    }
+
+    stage('Unit Test') {
+      steps {
+        // sh for shell command sh '(command)'
+        sh 'mvn test'
+      }
+    }
+
+    stage ('Checkstyle Analysis'){
+      steps {
+          sh 'mvn checkstyle:checkstyle'
+      }
+    }
+  }
+  // after all stage -> send noti
+  post {
+    always {
+      echo 'Slack Noti'
+      slackSend channel: "#all-devops-1",
+        color: COLOR_MAP[currentBuild.currentResult],
+        message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME}" 
+    }
+  }
+}
