@@ -1,8 +1,8 @@
-# 📦 Vagrant Part
+# 📦 Vagrant Section
 
-Welcome to the Vagrant part of my DevOps-1 learning journey! 🚀
+Welcome to the Vagrant section of my DevOps-1 learning journey! 🚀
 
-This branch is where I document what I’ve learned while using Vagrant.
+This branch is where I document what I’ve learned while using Vagrant
 
 ## 📚 Topics Covered
 
