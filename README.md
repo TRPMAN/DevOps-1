@@ -1,12 +1,8 @@
 # 🐧 Linux Section
 
----
-
 Welcome to the Linux section of my Devops-1 learning journey! 🚀
 
 This branch is where I document some useful Linux commands that I’ve been learning.
-
----
 
 ## 📚 Topics Covered
 
