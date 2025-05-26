@@ -1,12 +1,12 @@
-# 📝 Git Part(In progress)
+# 🐍 Python Section(In progress)
 
-Welcome to the Git part of my Devops-1 learning journey! 🚀
+Welcome to the Python section of my Devops-1 learning journey! 🚀
 
-This branch is where I document my Git command that I’ve been learning
+This branch is where I document my Python practicing that I've been learning
 
-### 🔧 Jenkins Practice
+### 🎯 Python Practice
 
-1. [Good to Know](./Good_to_Know.md) - Some Good to know Git
+1. [Good to Know](./Good_to_Know.md) - Some Good to know Python
 
 ---
 Thanks for visiting 💡
