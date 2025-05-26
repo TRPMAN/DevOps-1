@@ -1,8 +1,8 @@
-# 💻 Bash Scripting Part
+# 💻 Bash Scripting Section
 
-Welcome to the Bash Scripting part of my Devops-1 learning journey! 🚀
+Welcome to the Bash Scripting section of my Devops-1 learning journey! 🚀
 
-This branch is where I document my Bash Script practice and a little project that I’ve been learning.
+This branch is where I document my Bash Script practice and a little project that I’ve been learning
 
 ### 🔧 Bash Scripting Practice
 
@@ -24,5 +24,6 @@ This branch is where I document my Bash Script practice and a little project tha
 16. [16_while.sh](./16_while.sh) – While loop continued  
 17. [dismantle.sh](./dismantle.sh) – Script to clean up or remove setup  
 18. [Remote_host](./Remote_host) – A project that uses Bash scripts to automate web setup across 3 virtual machines from a remote host.
+
 ---
 Thanks for visiting 💡
