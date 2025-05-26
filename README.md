@@ -1,29 +1,12 @@
-# DevOps Learning Progress
+# 📝 Git Part(In progress)
 
-Welcome to my DevOps learning repository! 🚀
+Welcome to the Git part of my Devops-1 learning journey! 🚀
 
-This is where I document my learning, hands-on exercises, and some projects as I build up my DevOps skill set.
+This branch is where I document my Git command that I’ve been learning
 
-## 🔍 How to Use
+### 🔧 Jenkins Practice
 
-- Browse the available branches to explore different topics.
-- Each branch contains relevant notes, code examples, and practice configurations related to a specific DevOps area.
-
-## 🎯 Topics Covered
-
-Some of the topics I plan to explored include:
-
-- ✅ Linux
-- ✅ Vagrant&Linux Server
-- ✅ Network
-- ✅ Containers
-- ✅ Bash Scripting
-- ⏳ AWS
-- ⏳ Jenkins
-- ✅ Terraform
-- ⏳ Ansible
-- ⏳ Docker
-- ⏳ Kubernetes
+1. [Good to Know](./Good_to_Know.md) - Some Good to know Git
 
 ---
 Thanks for visiting 💡
