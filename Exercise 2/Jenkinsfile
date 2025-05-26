@@ -1,0 +1,130 @@
+def COLOR_MAP = [
+  'SUCCESS': 'good',
+  'FAILURE': 'danger'
+]
+
+pipeline {
+  agent any
+  // This env come from -> Manage Jenkins -> Credentials
+  environment {
+    REPO_URL = credentials('hkh-repo-url')
+    // ECR Credential
+    registryCredential = 'ecr:us-east-1:aws-creden'
+    // ECR Account and Image name
+    imageName = credentials('image-name')
+    // Url of imageName
+    vprofileRegistry = credentials('uri-registry')
+    // cluster and service that create from ECS
+    cluster = "jenkins-vprofile"
+    service = "jenkins-task-service"
+  }
+  tools {
+    maven "MAVEN3.9"
+    jdk "JDK17"
+  }
+
+  stages {
+    stage('Fetch code') {
+      steps {
+        // git option: ' ', option: ' ', .....
+        git branch: 'docker', url: "${env.REPO_URL}"
+      }
+    }
+
+    stage('Unit Test') {
+      steps {
+        // sh for shell command sh '(command)'
+        sh 'mvn test'
+      }
+    }
+
+    stage ('Checkstyle Analysis'){
+      steps {
+          sh 'mvn checkstyle:checkstyle'
+      }
+    }
+
+    stage('SonarQube Analysis') {
+      // set environment variable for this stage only
+      // using tool in Manage Jenkins->Tools->Tools Name
+      environment {
+        scannerHome = tool 'SONAR6.2'
+      }
+      steps {
+        // uses the sonarqube server configured in Manage Jenkins -> System Configuration
+        // withSonarQubeEnv('(name from Jenkins->System->SonarQube servers->Name))')
+        withSonarQubeEnv('Sonar-server'){
+          // give multi line command and explain code
+          sh '''
+            ${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=vprofile \
+              -Dsonar.projectName=vprofile-repo \
+              -Dsonar.projectVersion=1.0 \
+              -Dsonar.sources=src/ \
+              -Dsonar.java.binaries=target/test-classes/com/visualpathit/account/controllerTest/ \
+              -Dsonar.junit.reportsPath=target/surefire-reports/ \
+              -Dsonar.jacoco.reportsPath=target/jacoco.exec \
+              -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml'''
+          // Going into Directory of tool in env -> Give a projectKry value
+          // Project name
+          // Project Version
+          // Source Code of our project
+          // Scan from source code and upload all the available result to the sonarserver
+        }
+      }
+    }
+    stage('Quality Gate') {
+      // use Quality Gate
+      steps {
+        timeout(time: 1, unit: 'HOURS') {
+          waitForQualityGate abortPipeline: true
+        }
+      }
+    }
+
+    stage('Build Docker Image') {
+      // run Dockerfile to Build Image  
+      steps {
+        script {
+          dockerImage = docker.build("${imageName}:$BUILD_NUMBER", "./Docker-files/app/multistage/")
+        }
+      }
+    }
+
+    stage('Upload Image to Amazon ECR') {
+      steps {
+        script {
+          docker.withRegistry(vprofileRegistry, registryCredential) {
+            dockerImage.push("$BUILD_NUMBER")
+            dockerImage.push('latest')
+          }
+        }
+      }
+    }
+
+    stage('Deploy to ECS') {
+      steps {
+        withAWS(credentials: 'aws-creden', region: 'us-east-1') {
+          // creat a new container, new task in the service with the latest image
+          sh 'aws ecs update-service --cluster ${cluster} --service ${service} --force-new-deployment'
+        }
+      }
+    }
+
+    // stage('Remove Container Images') {
+    //   steps {
+    //     script {
+    //       sh 'docker rmi -f $(docker images -a -q)'
+    //     }
+    //   }
+    // }
+  }
+  // after all stage -> send noti
+  post {
+    always {
+      echo 'Slack Noti'
+      slackSend channel: "#all-devops-1",
+        color: COLOR_MAP[currentBuild.currentResult],
+        message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME}" 
+    }
+  }
+}
