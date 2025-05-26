@@ -16,3 +16,8 @@
 - visudo : Edit Permission about sudo or NOPASSWD
   - --> (username) ALL=(ALL) NOPASSWD: ALL : Allow root to run any commands anywhere
   - --> %(groupname) ALL=(ALL) NOPASSWD: ALL : Allow root to run any commands anywhere
+- ssh with user& password
+  - vim /etc/ssh/sshd_config -> PasswordAuthentication no -> turn it to yes
+  - vim /etc/ssh/sshd_config.d/60-cloudimg-settings.conf -> PasswordAuthentication no -> turn it to yes
+  - systemctl restart ssh(ubuntu),systemctl restart sshd(red hat)
+  - ssh (username)@(ip addr) -> enter password
