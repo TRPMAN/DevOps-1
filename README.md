@@ -1,4 +1,4 @@
-# 🐍 Python Section(In progress)
+# 🐍 Python Section
 
 Welcome to the Python section of my Devops-1 learning journey! 🚀
 
