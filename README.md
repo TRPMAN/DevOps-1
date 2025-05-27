@@ -1,8 +1,8 @@
-# 💠 Terraform Section
+# 🅰️ Ansible Section
 
-Welcome to the Terraform section of my Devops-1 learning journey! 🚀
+Welcome to the Ansible section of my Devops-1 learning journey! 🚀
 
-This branch is where I document my Terraform practice that I’ve been learning
+This branch is where I document my Ansible practice that I’ve been learning
 
 ## 📚 Topics Covered
 
