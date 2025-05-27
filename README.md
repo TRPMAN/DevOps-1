@@ -16,12 +16,10 @@ Some of the topics I plan to explored include:
 - ✅ Linux
 - ⏳ Git
 - ✅ Vagrant&Linux Server
-- ✅ Network
-- ✅ Containers
 - ✅ Bash Scripting
 - ⏳ AWS
 - ✅ Jenkins
-- ⏳ Python
+- ✅ Python
 - ✅ Terraform
 - ⏳ Ansible
 - ⏳ Docker
