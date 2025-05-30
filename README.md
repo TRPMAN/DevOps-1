@@ -21,7 +21,7 @@ Some of the topics I plan to explored include:
 - ✅ Jenkins
 - ✅ Python
 - ✅ Terraform
-- ⏳ Ansible
+- ✅ Ansible
 - ⏳ Docker
 - ⏳ Kubernetes
 
