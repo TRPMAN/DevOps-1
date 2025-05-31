@@ -1,4 +1,4 @@
-# 🎓 DevOps Learning Progress 🎓
+# 🎓 DevOps Learning Progress 
 
 Welcome to my DevOps learning repository! 🚀
 
