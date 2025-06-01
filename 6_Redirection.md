@@ -2,25 +2,25 @@
 - (input) > (target) : input create/overwrite
 - target        
 - (input) >> (target) : input add data in target
-  - --> 1>, 1>>, >, >> : standard output(default)
-  - --> 2>, 2>> : standard error
-  - --> &>, &>> : all 1&2
+  - 1>, 1>>, >, >> : standard output(default)
+  - 2>, 2>> : standard error
+  - &>, &>> : all 1&2
 - | : send the 1st command’s output to the 2nd command
-  - --> -R : Recursive
-  - --> -v : Opposite search
+  - -R : Recursive
+  - -v : Opposite search
 - less : reader
 - more : reader with percent
 - head : cat first 10 line
-  - --> -n : first n line
+  - -n : first n line
 - tail : cat last 10 line
-  - --> -n : first n line
-  - --> -f : for live change
+  - -n : first n line
+  - -f : for live change
 - cut : looking specific col
-  - --> -d(delimiter) : delimiter
-  - --> -f(number) : for colume n
+  - -d(delimiter) : delimiter
+  - -f(number) : for colume n
 - awk : better than cut
-  - --> -f'delimiter' : delimiter
-  - --> 'print $n' : for colume n
+  - -f'delimiter' : delimiter
+  - 'print $n' : for colume n
 - xargs : receive data from awk
 - sed 's/(word replaced)/(replace text)/g(all word)' (target) : replace word
-  - --> -i : confirm change
+  - -i : confirm change
