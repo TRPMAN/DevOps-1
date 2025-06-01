@@ -4,8 +4,8 @@ Debian-based systems (like Ubuntu) are similar, but some commands may differ sli
 - adduser : add user
 - export EDITOR=vim : default editor is nano (if you want to change editor)
 - dpkg : manual manage package
-  - --> -i : install
-  - --> -r : remove
+  - -i : install
+  - -r : remove
 - apt install : auto manage package
 - apt remove : auto remove package
 - apt purge : auto remove package cleanly
