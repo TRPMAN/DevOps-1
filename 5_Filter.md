@@ -1,23 +1,24 @@
 ## Filter
 - grep (word) (file, *) : find word in
-  - --> -i : ignore case
-  - --> sensitivity
-  - --> -R : Recursive
-  - --> -v : Opposite search
+  - -i : ignore case
+  - sensitivity
+  - -R : Recursive
+  - -v : Opposite search
 - less : reader
 - more : reader with percent
 - head : cat first 10 line
-  - --> -n : first n line
+  - -n : first n line
 - tail : cat last 10 line
-  - --> -n : first n line
-  - --> -f : for live change
+  - -n : first n line
+  - -f : for live change
 - cut : looking specific col
-  - --> -d(delimiter) : delimiter
-  - --> -f(number) : for colume n
-- awk : better than cut
-  - --> -f'delimiter' : delimiter
-  - --> 'print $n' : for colume n
+  - -d(delimiter) : delimiter
+  - -f(number) : for colume n
+- awk ' ': better than cut
+  - -f'delimiter' : delimiter
+  - {print $n} : only colume (n)
+  - NR>n : delete row (n)
 - sed 's/(word replaced)/(replace text)/g(all word)' (target) : replace word
-  - --> -i : confirm change
+  - -i : confirm change
 - find : looking file name
-  - --> -name (filter)* : name filter
+  - -name (filter)* : name filter
