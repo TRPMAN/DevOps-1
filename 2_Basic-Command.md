@@ -2,17 +2,17 @@
 - whoami : What user you are
 - pwd : Current Direc
 - ls : See in current Direc
-  - --> -l : More Info
-  - --> -t : TimeStamp
-  - --> -r : Reverse
-  - --> -d : Permission
+  - -l : More Info
+  - -t : TimeStamp
+  - -r : Reverse
+  - -d : Permission
 - cat : Read a file
 - sudo -i : Switch to root user
 - cd : Change Direc
 - exit : Loggout
 - mkdir : make direc
 - touch : create empty file
-  - --> touch text{1..10}.txt : range file
+  - touch text{1..10}.txt : range file
 - cp, cp /*, cp -r : copy to
 - mv, mv /*, mv -r : move to, rename file
 - rm, rm -r : remove
