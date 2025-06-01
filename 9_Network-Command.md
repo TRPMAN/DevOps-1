@@ -1,7 +1,6 @@
 ## Network
 - ip addr show : own ip addr  
 - ping : send some packet to dest  
-  - --> install             : -i
 - set name for that ip : /etc/hosts
 - tracert : send 3 package to dest, show all hop
 - netstat -antp : show all TCP open port
