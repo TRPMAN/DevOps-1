@@ -12,7 +12,7 @@
 - r => read w => write x => execute
 - --- --- --- => filetype user group other
 - chmod -(option) (username):(group) (path) : change permission
-  - --> -R : Recursive
+  - -R : Recursive
 - chmod -(option) ((U,G,O)(-,+)(r,w,x)) ( path) : change permission
 - chmod -(option) 640 (path) : change permission
 - 4 => Read 2 => Write 1 => execute
@@ -23,5 +23,5 @@
 ## Archiving
 - tar -czvf (name).tar.gz : Archive
 - tar -xzvf (name).tar.gz : Extract
-- --> -C (path) : Extract to
+  - -C (path) : Extract to
 - can use zip unzip if install
