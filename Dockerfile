@@ -27,3 +27,11 @@ ADD nano.tar.gz .
 
 # COPY will not unpack package, just dump it into directory:
 # COPY nano.tar.gz .
+
+# ENTRYPOINT
+# It similar to CMD but it can pass arguments on docker run command
+# It can use like this
+# ENTRYPOINT ["echo"]
+# CMD ["hello"]
+# The result will be the same as we run echo hello 
+# but if you run docker run (image name) (some arguments), the argument will have highe priority than CMD
