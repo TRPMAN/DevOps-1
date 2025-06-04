@@ -1,14 +1,13 @@
 # Good to Know
 
-## Command
-### Images
+## Images
 - docker images : list images
 - docker pull (image name):(image tag) : pull images
 - docker rmi (image name):(image tag) : remove images
 - docker inspect (image name, container name) : show info
 - docker build -t (image name) (path) : create our own Docker image
 
-### Containers
+## Containers
 - docker ps : list containers
   - -a : all status
 - docker run --name (container name) -d -p (host port):(container port) (image) : build and start container
@@ -23,12 +22,20 @@
   - Must have existing container before start
 - docker logs (container name or ID) : show the stdout and stderr logs from a container (useful for troubleshooting)
 
-### Execute
+## Execute
 - docker exec (container name) (command) : run command in container
 - docker exec -it (container name) /bin/bash : like ssh to instance but this is in container
 
-### Volume
+## Volume
 - docker volume : see the option in Docker Volume
+
+## Compose
+- docker compose build : build all images that mention on compose.yaml
+- docker compose up : run all container that metion on compose.yaml
+  - --build : build and run all container
+  - -d : run on background
+- docker compose down : stop and remove all container that metion on compose.yaml
+  - -v : remove all volumes
 
 ## Dockerhub
 - docker login : login using Docker account
