@@ -43,6 +43,7 @@ Webpage cannot login(so the problem will be it cannot connect to database) so I 
   - Result : It show there is no password 
 - I check Dockerfile  
   - Result : I saw MYSQL_ROOT_PASSWORD=MYSQL_ROOT_PASSWORD so I fix it
+  
 It still cannot login so I solving this by
 - I check containers 
   - Command : docker ps 
@@ -57,6 +58,7 @@ It still cannot login so I solving this by
   - Result : It show something like cannot found this database
 - I check Dockerfile
   - Result : I see MYSQl_DATABASE spelling mistake so I fix it
+  
 It still cannot login again so I solving this by
 - I want to check inside container 
   - Command : docker exec -it dbcontainer bash
