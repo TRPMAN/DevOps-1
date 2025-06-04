@@ -2,18 +2,22 @@ services:
   db:
     build: 
       context: ./Docker_files/db
+    # if you want to push to your Dockerhub, You need to name it (your repo name)/(project name)
     image: trpman/dockerpj1_db
     container_name: vprodb
     ports: 
       - "3306:3306"
+    # volume mount
     volumes:
       - vprodbdata:/var/lib/mysql
+    # use env in runtime
     environment:
       - MYSQL_ROOT_PASSWORD=${DOCK_MYSQL_ROOT_PASSWORD}
       - MYSQL_DATABASE=${DOCK_MYSQL_DATABASE}
   app:
     build: 
       context: ./Docker_files/app
+      # similar to env but use when build(use in Dockerfile)
       args:
         GIT_REPO: ${DOCK_GIT_REPO}
     image: trpman/dockerpj1_app
