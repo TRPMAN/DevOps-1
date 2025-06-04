@@ -1,0 +1,16 @@
+include:
+  # make a separate file for redis service
+   - infra.yaml
+services:
+  # Service name is not the container name
+  web:
+    build: .
+    ports:
+      - "8000:5000"
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /code
+  # redis:
+    # image: "redis:alpine"
