@@ -1,29 +1,14 @@
-# 🎓 DevOps Learning Progress 
+# 📁 Project Part 6
 
-Welcome to my DevOps learning repository! 🚀
+Welcome to the Sixth Project of my DevOps-1 learning journey! 🚀
 
-This is where I document my learning, hands-on exercises, and some projects as I build up my DevOps skill set
+This branch contains a hands-on project for learning how to containerizing microservice
 
-## 🔍 How to Use
-
-- Browse the available branches to explore different topics
-- Each branch contains relevant notes, code examples, and practice configurations related to a specific DevOps area
-
-## 🎯 Topics Covered
-
-Some of the topics I plan to explored include:
-
-- ✅ Linux
-- ⏳ Git
-- ✅ Vagrant&Linux Server
-- ✅ Bash Scripting
-- ⏳ AWS
-- ✅ Jenkins
-- ✅ Python
-- ✅ Terraform
-- ✅ Ansible
-- ⏳ Docker
-- ⏳ Kubernetes
+## 📚 Step
+1. Understand all steps to setup all service from previous Dockerfile
+2. Create our own Dockerfile from client, javaapi and nodeapi
+3. Create our own compose
+4. Test it
 
 ---
-Thanks for visiting 💡
+Thanks for visiting! 💡
