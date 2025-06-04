@@ -1,0 +1,50 @@
+services:
+  db:
+    build: 
+      context: ./Docker_files/db
+    image: trpman/dockerpj1_db
+    container_name: vprodb
+    ports: 
+      - "3306:3306"
+    volumes:
+      - vprodbdata:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DOCK_MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${DOCK_MYSQL_DATABASE}
+  app:
+    build: 
+      context: ./Docker_files/app
+      args:
+        GIT_REPO: ${DOCK_GIT_REPO}
+    image: trpman/dockerpj1_app
+    container_name: vproapp
+    ports: 
+      - "8080:8080"
+    volumes:
+      - vproappdata:/usr/local/tomcat/webapps
+
+  web:
+    build: 
+      context: ./Docker_files/web
+    image: trpman/dockerpj1_web
+    container_name: vproweb
+    ports: 
+      - "80:80"
+    volumes:
+      - vproappdata:/usr/local/tomcat/webapps
+  memcache:
+    image: memcached
+    container_name: vprocache01
+    ports: 
+      - "11211:11211"
+  rabbitmq:
+    image: rabbitmq
+    container_name: vpromq01
+    ports: 
+      - "5672:5672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=${DOCK_RABBITMQ_DEFAULT_USER}
+      - RABBITMQ_DEFAULT_PASS=${DOCK_RABBITMQ_DEFAULT_PASS}
+volumes:
+  vprodbdata: {}
+  vproappdata: {}
