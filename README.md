@@ -13,7 +13,8 @@ This branch is where I document my Terraform practice that I’ve been learning
 5. [Exercise 5](./Exercise%205) – Learning about Output 
 6. [Exercise 6](./Exercise%206) – Connect to an S3 Bucket
 7. [Exercise 7](./Exercise%207) – Basic VPC setup
-
+8. [Exercise 8](./Exercise%208) – EKS setup with Terraform
+9. [Good_to_Know.md](./Good_to_Know.md) - Good to Know in Terraform
 
 ---
 Thanks for visiting 💡
