@@ -7,4 +7,4 @@ This service is for managing relational databases easily and efficiently
 - Should create RDS-VPC-SG for security
 - Database Auth : Should save the username and password for login
 - Enable auto minor version upgrade in Maintenance **Disable it to make it not auto upgrade db 
-- mysql -h (rds endpoint) -u (username) -p : access mysql db
+- mysql -h <rds-endpoint> -u <username> -p : access mysql db

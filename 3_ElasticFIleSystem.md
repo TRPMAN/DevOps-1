@@ -10,5 +10,5 @@ This is the document : https://docs.aws.amazon.com/efs/latest/ug/using-amazon-ef
 - SSh into EC2 instance
 - install amazon-efs-util
 - vi /etc/fstab
-  - (file-system-id) (efs-mount-point) efs _netdev,tls,accesspoint=(access-point-id) 0 0
+  - <file-system-id> <efs-mount-point> efs _netdev,tls,accesspoint=<access-point-id> 0 0
 - mount -fav : if it error or success it gonna show after this command
