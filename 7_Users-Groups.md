@@ -9,15 +9,15 @@
   - -aG : 2nd group
 - vim /etc/group : add group to user
 - passwd : add user password
-- su - (username) : login into that user
+- su - <username> : login into that user
 - userdel : delete user
   - -r : user home direc
 - groupdel : delete group
 - visudo : Edit Permission about sudo or NOPASSWD
-  - (username) ALL=(ALL) NOPASSWD: ALL : Allow root to run any commands anywhere
-  - %(groupname) ALL=(ALL) NOPASSWD: ALL : Allow root to run any commands anywhere
-- ssh with user& password
+  - <username> ALL=<ALL> NOPASSWD: ALL : Allow root to run any commands anywhere
+  - %<groupname> ALL=<ALL> NOPASSWD: ALL : Allow root to run any commands anywhere
+- ssh with user & password
   - vim /etc/ssh/sshd_config -> PasswordAuthentication no -> turn it to yes
   - vim /etc/ssh/sshd_config.d/60-cloudimg-settings.conf -> PasswordAuthentication no -> turn it to yes
-  - systemctl restart ssh(ubuntu),systemctl restart sshd(red hat)
-  - ssh (username)@(ip addr) -> enter password
+  - systemctl restart ssh<ubuntu>, systemctl restart sshd<red hat>
+  - ssh <username>@<ip addr> -> enter password

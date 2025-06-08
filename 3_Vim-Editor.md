@@ -19,5 +19,5 @@
 - :wq! : force
 - :se nu : set line num
 - :se nonu : remove line num
-- :%s/(word replaced)/(replace word) : replace
+- :%s/<word replaced>/<replace word> : replace
   - /g(in the end) : All word

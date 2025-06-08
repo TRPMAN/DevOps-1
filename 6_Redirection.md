@@ -1,8 +1,8 @@
 ## Redirection
-- (input) > (target) : input create/overwrite
+- <input> > <target> : input create/overwrite
 - target        
-- (input) >> (target) : input add data in target
-  - 1>, 1>>, >, >> : standard output(default)
+- <input> >> <target> : input add data in target
+  - 1>, 1>>, >, >> : standard output (default)
   - 2>, 2>> : standard error
   - &>, &>> : all 1&2
 - | : send the 1st command’s output to the 2nd command
@@ -16,11 +16,11 @@
   - -n : first n line
   - -f : for live change
 - cut : looking specific col
-  - -d(delimiter) : delimiter
-  - -f(number) : for colume n
+  - -d<delimiter> : delimiter
+  - -f<number> : for colume n
 - awk : better than cut
-  - -f'delimiter' : delimiter
-  - 'print $n' : for colume n
+  - -f<delimiter> : delimiter
+  - 'print $n' : for colume <n>
 - xargs : receive data from awk
-- sed 's/(word replaced)/(replace text)/g(all word)' (target) : replace word
+- sed 's/<word replaced>/<replace text>/g<all word>' <target> : replace word
   - -i : confirm change
