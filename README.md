@@ -1,6 +1,6 @@
 # ☸️ Kubernetes Section
 
-Welcome to the Kubernetes section of my Devops-1 learning journey! 🚀
+Welcome to the Kubernetes section of my DevOps-1 learning journey! 🚀
 
 This branch is where I document my Kubernetes practice that I’ve been learning
 
