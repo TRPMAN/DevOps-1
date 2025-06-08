@@ -1,6 +1,6 @@
 # 🤖 Jenkins Section
 
-Welcome to the Jenkins section of my Devops-1 learning journey! 🚀
+Welcome to the Jenkins section of my DevOps-1 learning journey! 🚀
 
 This branch is where I document my Jenkins practice that I’ve been learning
 
