@@ -13,6 +13,7 @@ In this branch, I document what I’ve learned while working with AWS
 5. [S3](./4_S3.md) –  S3 buckets, storage classes, and rules
 6. [RDS](./5_RDS.md) – Manage Database with Amazon RDS
 7. [ECS](./6_ECS.md) - Manage Container with Amazon ECR and ECS
+8. [VPC](./7_VPC.md) - Manage VPC and Network in AWS
 
 ---
 Thanks for visiting 💡
