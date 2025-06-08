@@ -1,0 +1,25 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: vpro-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  ingressClassName: nginx
+  # routing rule
+  rules:
+    # If you're using an AWS ELB, make sure to create a DNS record in your domain provider
+    # So that external users can access the application using this URL
+  - host: myapp.agsfva.online
+    http:
+      paths:
+        # with this path
+      - path: /
+        pathType: Prefix
+        backend:
+          # to go to this service
+          service:
+            name: my-app
+            port:
+              number: 8080

@@ -1,0 +1,32 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: db-pod
+spec:
+  containers:
+  - name: mysql
+    image: mysql:5.7
+    env:
+    - name: MYSQL_ROOT_PASSWORD
+      value: mypassword
+    volumeMounts:
+      # volume name
+    - name: dbvol
+      # path in container
+      mountPath: /var/lib/mysql/data
+      # volume name(but pvc)
+    - name: mysql-persistent-storage
+      mountPath: /var/lib/mysql/logs
+  volumes:
+    # should be the same name as volumeMounts name
+  - name: dbvol
+    # mount /data/foo, but only if that directory already exists
+    hostPath:
+      path: /data # directory location on specific node
+      type: DirectoryOrCreate # this field is optional
+    # should be the same as name on volumeMounts
+  - name: mysql-persistent-storage
+    persistentVolumeClaim:
+      # should be the same name as pvc's metadata name
+      claimName: mysql-pvc

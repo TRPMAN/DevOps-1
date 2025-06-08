@@ -1,0 +1,27 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: frontend
+spec:
+  containers:
+  - name: app
+    image: trpman/dockerpj1_app
+    resources:
+      # this is the minimum amount of resources that a node should have to run this pod
+      requests:
+        memory: "64Mi"
+        cpu: "250m"
+      # this is the maximum amount of resources the pod is allowed to use
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+  - name: mysql
+    image: mysql:5.7
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "250m"
+      limits:
+        memory: "128Mi"
+        cpu: "500m"

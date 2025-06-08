@@ -1,0 +1,19 @@
+---
+# if you use kubectl taint nodes node1 key1=value1:NoSchedule
+# the pod with this tolerations(key1=value1:NoSchedule) can run on this node
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    env: test
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    imagePullPolicy: IfNotPresent
+  tolerations:
+  - key: "key1"
+    operator: "Equal"
+    value: "value1"
+    effect: "NoSchedule"
