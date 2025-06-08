@@ -1,6 +1,6 @@
 # 🐳 Docker Section
 
-Welcome to the Docker section of my Devops-1 learning journey! 🚀
+Welcome to the Docker section of my DevOps-1 learning journey! 🚀
 
 This branch is where I document my Docker practice that I’ve been learning
 
