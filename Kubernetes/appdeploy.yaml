@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: application
+  labels:
+    app: application
+spec:
+  selector:
+    matchLabels:
+      app: application
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: application
+    spec:
+      containers:
+      - name: application-container
+        image: trpman/dockerpj1_app
+        ports:
+        - name: application-port
+          containerPort: 8080
+      # This will make app container deploy after all backend come up
+      initContainers:
+      - name: init-mysql
+        image: busybox:1.28
+        # until will running command until it complete 
+        # so we will nslookup to wait every backend come up and then terminated initcontainer
+        # then app containe deploy
+        command: ['sh', '-c', "until nslookup vprodb.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local; do echo waiting for mysql; sleep 2; done"]
+      - name: init-memcache
+        image: busybox:1.28
+        command: ['sh', '-c', "until nslookup vprocache01.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local; do echo waiting for memcache; sleep 2; done"]
+      - name: init-rabbitmq
+        image: busybox:1.28
+        command: ['sh', '-c', "until nslookup vpromq01.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local; do echo waiting for rabbitmq; sleep 2; done"]

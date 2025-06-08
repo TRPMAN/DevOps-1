@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql
+  labels:
+    app: mysql
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+      - name: myapp-container
+        image: trpman/dockerpj1_db
+        ports:
+        - name: mysql-port
+          containerPort: 3306
+        env: 
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: app-secret
+              key: db-pass
+        volumeMounts:
+        - name: mysql-pvc-data
+          mountPath: /var/lib/mysql
+
+      volumes:
+      - name: mysql-pvc-data
+        persistentVolumeClaim:
+          claimName: mysql-pvc
+
+      # Need to make sure that /var/lib/mysql is empty
+      # so initContainer will delete lost+found before mysql start and it will terminated
+      initContainers:
+      - name: busybox
+        image: busybox:latest
+        args: ["rm","-rf","/var/lib/mysql/lost+found"]
+        volumeMounts:
+        # point it to volumes
+        - name: mysql-pvc-data
+          mountPath: /var/lib/mysql
