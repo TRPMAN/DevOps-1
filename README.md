@@ -1,6 +1,6 @@
 # 📝 Git Section(In progress)
 
-Welcome to the Git section of my Devops-1 learning journey! 🚀
+Welcome to the Git section of my DevOps-1 learning journey! 🚀
 
 This branch is where I document my Git command that I’ve been learning
 
