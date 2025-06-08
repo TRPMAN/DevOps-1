@@ -1,14 +1,15 @@
-# 📁 Project Part 6
+# 📁 Project Part 7
 
-Welcome to the Sixth Project of my DevOps-1 learning journey! 🚀
+Welcome to the Seventh Project of my DevOps-1 learning journey! 🚀
 
-This branch contains a hands-on project for learning how to containerizing microservice
+This branch contains a hands-on project for learning how to deploy Project5_Containerization with K8s
 
 ## 📚 Step
-1. Understand all steps to setup all service from previous Dockerfile
-2. Create our own Dockerfile from client, javaapi and nodeapi
-3. Create our own compose
-4. Test it
+1. Encode secret and write Secret manifest
+2. Write DB manifest(PVC, Deploy, Service)
+3. Write Memcache and RabbitMQ manifest(Deploy, Service)
+4. Write App manifest
+
 
 ---
 Thanks for visiting! 💡
