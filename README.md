@@ -1,6 +1,6 @@
 # 💠 Terraform Section
 
-Welcome to the Terraform section of my Devops-1 learning journey! 🚀
+Welcome to the Terraform section of my DevOps-1 learning journey! 🚀
 
 This branch is where I document my Terraform practice that I’ve been learning
 
