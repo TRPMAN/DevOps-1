@@ -25,5 +25,14 @@ Some of the topics I plan to explored include:
 - ✅ Docker
 - ✅ Kubernetes
 
+## 📁 Project
+- ✅ Project1_HostWebsite
+- ✅ Project2_AWSLift&Shift
+- ✅ Project3_AWSRearch
+- ✅ Project4_AWSCI/CD
+- ✅ Project5_Containerization
+- ✅ Project6_Microservice
+- ✅ Project7_K8s
+- ⏳ Project8_GitOps
 ---
 Thanks for visiting 💡
