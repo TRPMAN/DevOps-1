@@ -18,7 +18,7 @@ spec:
       - name: application-container
         image: trpman/dockerpj1_app
         ports:
-        - name: application-port
+        - name: app-port
           containerPort: 8080
       # This will make app container deploy after all backend come up
       initContainers:
