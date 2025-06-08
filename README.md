@@ -6,16 +6,16 @@ This branch is where I document some useful Linux commands that I’ve been lear
 
 ## 📚 Topics Covered
 
-1. [Good to Know](./0_Good-to-Know.md) – Good to Know about Linux Command
-2. [Important Directories](./1_Important%20Directory.md) – Key System Directories
-3. [Basic Commands](./2_Basic-Command.md) – Basic Linux CLI commands
-4. [Vim Editor](./3_Vim-Editor.md) – Basics of editing with Vim
-5. [File System & Permissions](./4_File-System-Permission.md) – Linux file structure and permission
-6. [Filters](./5_Filter.md) – Filtering Command
-7. [Redirection](./6_Redirection.md) – Redirect Output Command 
-8. [Users & Groups](./7_Users-Groups.md) – Managing user accounts, groups, and permissions
-9. [Ubuntu](./8_Ubuntu.md) – Differences in commands and tools between Red Hat and Debian-based systems
-10. [Network](./9_Network-Command.md) – Network Good to Know Command
+1. [Important Directories](./1_ImportantDirectory.md) – Key System Directories
+2. [Basic Commands](./2_BasicCommand.md) – Basic Linux CLI commands
+3. [Vim Editor](./3_VimEditor.md) – Basics of editing with Vim
+4. [File System & Permissions](./4_FileSystemPermission.md) – Linux file structure and permission
+5. [Filters](./5_Filter.md) – Filtering Command
+6. [Redirection](./6_Redirection.md) – Redirect Output Command 
+7. [Users & Groups](./7_UsersGroups.md) – Managing user accounts, groups, and permissions
+8. [Ubuntu](./8_Ubuntu.md) – Differences in commands and tools between Red Hat and Debian-based systems
+9. [Network](./9_NetworkCommand.md) – Network Good to Know Command
+10. [Good to Know](./Good_to_Know.md) – Good to Know about Linux Command
 
 ---
 Thanks for visiting 💡
