@@ -1,6 +1,6 @@
 # 🅰️ Ansible Section
 
-Welcome to the Ansible section of my Devops-1 learning journey! 🚀
+Welcome to the Ansible section of my DevOps-1 learning journey! 🚀
 
 This branch is where I document my Ansible practice that I’ve been learning
 
