@@ -1,6 +1,6 @@
 # ☁️ AWS Section
 
-Welcome to the AWS section of my Devops-1 learning journey! 🚀
+Welcome to the AWS section of my DevOps-1 learning journey! 🚀
 
 In this branch, I document what I’ve learned while working with AWS
 
