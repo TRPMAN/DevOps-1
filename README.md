@@ -6,9 +6,9 @@ This branch is where I document my Docker practice that I’ve been learning
 
 ## 📚 Topics Covered
 
-1. [Good to Know](./Good_toKnow.md) – Good to Know command in Docker
-2. [Dockerfile](./Dockerfile) – Basic Dockerfile Structure
-3. [composetest](./composetest) - Learning Basic Compose from Docker Documentation
+1. [Dockerfile](./Dockerfile) – Basic Dockerfile Structure
+2. [composetest](./composetest) - Learning Basic Compose from Docker Documentation
+3. [Good to Know](./Good_toKnow.md) – Good to Know command in Docker
 
 ---
 Thanks for visiting 💡
