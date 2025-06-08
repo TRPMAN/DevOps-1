@@ -1,6 +1,6 @@
 # 💻 Bash Scripting Section
 
-Welcome to the Bash Scripting section of my Devops-1 learning journey! 🚀
+Welcome to the Bash Scripting section of my DevOps-1 learning journey! 🚀
 
 This branch is where I document my Bash Script practice and a little project that I’ve been learning
 
