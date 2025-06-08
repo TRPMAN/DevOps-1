@@ -1,6 +1,6 @@
 # 🐍 Python Section
 
-Welcome to the Python section of my Devops-1 learning journey! 🚀
+Welcome to the Python section of my DevOps-1 learning journey! 🚀
 
 This branch is where I document my Python practicing that I've been learning
 
