@@ -13,6 +13,6 @@ Template
 - Checks the destination file before copying — if nothing has changed, it skips the update
 - Suitable for dynamic or host-specific configuration files
 
-##Handlers
+## Handlers
 - Handlers is a kind of task that only runs when it is notified by another task
 - It is typically used for actions that should happen only when there is a change

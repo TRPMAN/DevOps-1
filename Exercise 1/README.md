@@ -3,7 +3,7 @@ This exercise covers basic Ansible commands and writing a inventory file
 
 ## Command
 Ansible have a lot of module, so this is a example how to ping to another client machine
-- ansible (hostname) -m (module) (metion inventory path)
+- ansible <hostname> -m <module> <mention inventory path>
   - ansible web01 -m ping -i inventory
   - ansible webservers -m ping -i inventory
   - ansible '*' -m ping -i inventory
@@ -18,4 +18,4 @@ If we login to the client machine for the first time it will ask you this questi
 - Edit: host_key_checking=False
 - Go to your project directory(inventory and priate key)
 - Change permisson private_key file to chmod 400
-- Try ansible (hostname) -m ping -i inventory
+- Try ansible <hostname> -m ping -i inventory
