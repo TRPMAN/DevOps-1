@@ -26,10 +26,10 @@ Set a specific time when Jenkins will automatically build the job.
 
 ### 4.Remote Triggers
 Create a job URL, token for the user, and CRUMB. This can be used to trigger Jenkins to build via a `curl` command.
-- Select Trigger builds remotely (e.g., from scripts) -> Save Job Build url : (JENKINS_URL)/job/Build/build?token=(TOKEN_NAME)
-- Go to Jenkins Account -> Security -> API token -> Gen and save Job Token: (Jenkins username):(API_TOKEN)
-- Go to Gitbash -> Save CRUMB : wget -q --auth-no-challenge --user (Jenkins username) --password (Jenkins password) --output-document - '(JENKINS_URL)/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)'
-- Trigger the build with : curl -I -X POST http://(Job token)@(Job Build url) -H "(CRUMB)"
+- Select Trigger builds remotely (e.g., from scripts) -> Save Job Build url : <JENKINS_URL>/job/Build/build?token=<TOKEN_NAME>
+- Go to Jenkins Account -> Security -> API token -> Gen and save Job Token: <Jenkins-username>:<API_TOKEN>
+- Go to Gitbash -> Save CRUMB : wget -q --auth-no-challenge --user <Jenkins-username> --password <Jenkins-password> --output-document - '<JENKINS_URL>/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,":",//crumb)'
+- Trigger the build with : curl -I -X POST http://<Job-token>@<Job-Build-url> -H "<CRUMB>"
 
 ### 5.Build after other projects are built
 Build after the choose job has been build
