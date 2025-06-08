@@ -24,7 +24,7 @@ This Helm chart deploys the following components:
 To install the chart with the release name `my-release`:
 
 ```bash
-helm install my-release ./helm
+helm install my-release .
 ```
 
 ## Configuration
@@ -63,7 +63,7 @@ For production deployments, consider the following:
 To upgrade the chart:
 
 ```bash
-helm upgrade my-release ./helm
+helm upgrade my-release .
 ```
 
 ## Uninstalling the Chart
