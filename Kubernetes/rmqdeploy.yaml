@@ -15,9 +15,9 @@ spec:
         app: rabbitmq
     spec:
       containers:
-      - name: rabbitmq-container
+      - name: mq-container
         image: rabbitmq
-        port:
+        ports:
         - name: mq-port
           containerPort: 5672
         env:
