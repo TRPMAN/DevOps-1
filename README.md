@@ -1,4 +1,4 @@
-# 📝 Git Section(In progress)
+# 📝 Git Section
 
 Welcome to the Git section of my DevOps-1 learning journey! 🚀
 
