@@ -11,7 +11,7 @@ This exercise is for learning and practicing how to build a CI/CD pipeline with 
 - SonarQube is running on port 9000, but it's behind Nginx, which proxies it to be accessible via port 80
 - SonarQube server starts on EC2 within the same VPC as Jenkins, so it should use a private IP for more security
 - Create a Quality Gateway to set conditions
-- After creating the Quality Gateway, create a webhook → URL: http://<private ip>:8080/sonarqube-webhook
+- After creating the Quality Gateway, create a webhook → URL: 'http://<private ip>:8080/sonarqube-webhook'
 
 ## Nexus
 - Create repository:
