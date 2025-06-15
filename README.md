@@ -24,6 +24,8 @@ This branch is where I document my Python practicing that I've been learning
 16. [PyScript_OSTask.py](./16_PyScript_OSTask.py) - Basic OSTask
 17. [PyScript_Fabric.py](./17_PyScript_Fabric.py) - Automating tasks using Fabric
 18. [modern.py](./modern.py) - Separate file used for import in 14_CallModule.py
+19. [Exception](./18_Exception.py) - Handle Exception
+20. [Boto3](./Boto3/) - Using Boto3 for Cloud Automation
 
 ---
 Thanks for visiting 💡
