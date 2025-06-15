@@ -14,7 +14,7 @@ This is where I document my learning, hands-on exercises, and some projects as I
 Some of the topics I plan to explored include:
 
 - ✅ Linux
-- ⏳ Git
+- ✅ Git
 - ✅ Vagrant&Linux Server
 - ✅ Bash Scripting
 - ✅ AWS
